@@ -1,250 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartInvest India - Best AI-Powered Stock Investment Platform in India</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      SmartInvest India - Best AI-Powered Stock Investment Platform in India
+    </title>
     <!-- Meta Descriptions for SEO -->
-    <meta name="description" content="SmartInvest India - Learn proven stock investment strategies, read real-life success stories, and explore personalized AI-driven portfolios. Join India's leading investment community and grow your wealth today.">
-    <meta name="keywords" content="stock investment strategies, success stories, AI-driven investments, Indian stock market, investment community, financial planning, portfolio management, low-risk investments, medium-risk investments, high-risk investments, personalized portfolios">
+    <meta
+      name="description"
+      content="SmartInvest India - Learn proven stock investment strategies, read real-life success stories, and explore personalized AI-driven portfolios. Join India's leading investment community and grow your wealth today."
+    />
+    <meta
+      name="keywords"
+      content="stock investment strategies, success stories, AI-driven investments, Indian stock market, investment community, financial planning, portfolio management, low-risk investments, medium-risk investments, high-risk investments, personalized portfolios"
+    />
     <!-- Open Graph Tags for Social Media -->
-    <meta property="og:title" content="SmartInvest India - Best AI-Powered Stock Investment Platform in India">
-    <meta property="og:description" content="Discover personalized AI-driven investment strategies, read success stories, and join India's vibrant investor community. Start growing your wealth today.">
-    <meta property="og:image" content="https://source.unsplash.com/1600x900/?investment,stock-market">
-    <meta property="og:url" content="https://smartinvestindia.com">
+    <meta
+      property="og:title"
+      content="SmartInvest India - Best AI-Powered Stock Investment Platform in India"
+    />
+    <meta
+      property="og:description"
+      content="Discover personalized AI-driven investment strategies, read success stories, and join India's vibrant investor community. Start growing your wealth today."
+    />
+    <meta
+      property="og:image"
+      content="https://source.unsplash.com/1600x900/?investment,stock-market"
+    />
+    <meta property="og:url" content="https://smartinvestindia.com" />
     <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SmartInvest India - Best AI-Powered Stock Investment Platform in India">
-    <meta name="twitter:description" content="Learn stock investment strategies, read success stories, and join India's leading investment community.">
-    <meta name="twitter:image" content="https://source.unsplash.com/1600x900/?investment,stock-market">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="SmartInvest India - Best AI-Powered Stock Investment Platform in India"
+    />
+    <meta
+      name="twitter:description"
+      content="Learn stock investment strategies, read success stories, and join India's leading investment community."
+    />
+    <meta
+      name="twitter:image"
+      content="https://source.unsplash.com/1600x900/?investment,stock-market"
+    />
     <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <style>
-        /* Custom multi-color theme styles */
-        body {
-            background-color: #f7f9fa;
-        }
+      /* Custom multi-color theme styles */
+      body {
+        background-color: #f7f9fa;
+      }
 
-        .navbar, footer {
-            background-color: #004d00;
-        }
+      .navbar,
+      footer {
+        background-color: #004d00;
+      }
 
-        .navbar-brand, .nav-link, footer a {
-            color: white !important;
-        }
+      .navbar-brand,
+      .nav-link,
+      footer a {
+        color: white !important;
+      }
 
-        .hero-section {
-            background: linear-gradient(rgba(0, 77, 0, 0.8), rgba(0, 77, 0, 0.8)), url('https://source.unsplash.com/1600x900/?investment,stock-market') center center/cover no-repeat;
-            height: 60vh;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
+      .hero-section {
+        background: linear-gradient(rgba(0, 77, 0, 0.8), rgba(0, 77, 0, 0.8)),
+          url("https://source.unsplash.com/1600x900/?investment,stock-market")
+            center center/cover no-repeat;
+        height: 60vh;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
 
-        .hero-section h1 {
-            font-size: 3.5rem;
-            font-weight: bold;
-        }
+      .hero-section h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+      }
 
-        .hero-section p {
-            font-size: 1.3rem;
-        }
+      .hero-section p {
+        font-size: 1.3rem;
+      }
 
-        .feature-card {
-            background-color: #e6ffe6;
-            transition: transform 0.3s ease;
-            border: none;
-            border-radius: 10px;
-        }
+      .feature-card {
+        background-color: #e6ffe6;
+        transition: transform 0.3s ease;
+        border: none;
+        border-radius: 10px;
+      }
 
-        .feature-card:hover {
-            transform: scale(1.05);
-        }
+      .feature-card:hover {
+        transform: scale(1.05);
+      }
 
-        .strategy-card {
-            padding: 15px;
-            border: 2px solid;
-            border-radius: 8px;
-            margin: 15px 0;
-        }
+      .strategy-card {
+        padding: 15px;
+        border: 2px solid;
+        border-radius: 8px;
+        margin: 15px 0;
+      }
 
-        .low-risk {
-            background-color: #f3f6d9;
-            border-color: #cddc39;
-        }
+      .low-risk {
+        background-color: #f3f6d9;
+        border-color: #cddc39;
+      }
 
-        .medium-risk {
-            background-color: #d9f6f3;
-            border-color: #009688;
-        }
+      .medium-risk {
+        background-color: #d9f6f3;
+        border-color: #009688;
+      }
 
-        .high-risk {
-            background-color: #f6e1e1;
-            border-color: #f44336;
-        }
+      .high-risk {
+        background-color: #f6e1e1;
+        border-color: #f44336;
+      }
 
-        .success-story {
-            background-color: #e8f5e9;
-            padding: 20px;
-            border-radius: 10px;
-            border: 1px solid #004d00;
-            margin: 20px 0;
-        }
+      .success-story {
+        background-color: #e8f5e9;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #004d00;
+        margin: 20px 0;
+      }
 
-        footer {
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
+      footer {
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
 
-        /* Styles for the Join WhatsApp Group button */
-        .join-whatsapp-button {
-            background-color: #25D366; /* WhatsApp green color */
-            color: white;
-            font-size: 1.5rem; /* Larger font size */
-            padding: 15px 30px; /* Increase padding for a bigger button */
-            border: none;
-            border-radius: 50px; /* Rounded edges for a softer look */
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Shadow for a 3D effect */
-            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */
-        }
+      /* Styles for the Join WhatsApp Group button */
+      .join-whatsapp-button {
+        background-color: #25d366; /* WhatsApp green color */
+        color: white;
+        font-size: 1.5rem; /* Larger font size */
+        padding: 15px 30px; /* Increase padding for a bigger button */
+        border: none;
+        border-radius: 50px; /* Rounded edges for a softer look */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Shadow for a 3D effect */
+        transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */
+      }
 
-        .join-whatsapp-button:hover {
-            transform: scale(1.1); /* Slightly increase size on hover */
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* More intense shadow on hover */
-            background-color: #128C7E; /* Darker WhatsApp color on hover */
-        }
+      .join-whatsapp-button:hover {
+        transform: scale(1.1); /* Slightly increase size on hover */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* More intense shadow on hover */
+        background-color: #128c7e; /* Darker WhatsApp color on hover */
+      }
 
-        .join-whatsapp-button i {
-            margin-right: 10px; /* Space between icon and text */
-        }
+      .join-whatsapp-button i {
+        margin-right: 10px; /* Space between icon and text */
+      }
     </style>
-</head>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "564114546312472");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=564114546312472&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
 
-<body>
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg">
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
-          <a class="navbar-brand" href="#">SmartInvest India</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Strategies</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Success Stories</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Market Analysis</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Join WhatsApp Group</a></li>
-              </ul>
-          </div>
+        <a class="navbar-brand" href="#">SmartInvest India</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Strategies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Success Stories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Market Analysis</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Join WhatsApp Group</a>
+            </li>
+          </ul>
+        </div>
       </div>
-  </nav>
+    </nav>
 
-  <!-- Hero Section -->
-  <div class="hero-section">
+    <!-- Hero Section -->
+    <div class="hero-section">
       <div>
-          <h1>Learn to Invest, Grow with Confidence</h1>
-          <p>Discover AI-powered strategies to enhance your financial knowledge and achieve your long-term financial goals. Join our community today to start your journey to informed investing.</p>
-          <a href="https://chat.whatsapp.com/IknHJU7o3lp6810HghOw5u" target="_blank" class="btn btn-light btn-lg join-whatsapp-button"><i class="fab fa-whatsapp"></i> Discover Investment Opportunities</a>
+        <h1>Learn to Invest, Grow with Confidence</h1>
+        <p>
+          Discover AI-powered strategies to enhance your financial knowledge and
+          achieve your long-term financial goals. Join our community today to
+          start your journey to informed investing.
+        </p>
+        <a
+          href="https://chat.whatsapp.com/IknHJU7o3lp6810HghOw5u"
+          target="_blank"
+          class="btn btn-light btn-lg join-whatsapp-button"
+          ><i class="fab fa-whatsapp"></i> Discover Investment Opportunities</a
+        >
       </div>
-  </div>
+    </div>
 
-  <!-- Investment Strategies Section -->
-  <section class="py-5">
+    <!-- Investment Strategies Section -->
+    <section class="py-5">
       <div class="container">
-          <h2 class="text-center mb-5">Practical Investment Strategies for Every Investor</h2>
-          <div class="row">
-              <div class="col-md-4">
-                  <div class="strategy-card low-risk">
-                      <h5>Low-Risk Strategy (Beginner Investors)</h5>
-                      <p>Focus on mutual funds, government bonds, and blue-chip stocks to ensure steady and stable growth. Ideal for learning the basics of investing while managing risk effectively.</p>
-                  </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="strategy-card medium-risk">
-                      <h5>Medium-Risk Strategy (Intermediate Investors)</h5>
-                      <p>Blend of index funds, large-cap stocks, and some growth stocks. A balanced approach for building wealth over time with measured risks.</p>
-                  </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="strategy-card high-risk">
-                      <h5>High-Risk Strategy (Advanced Investors)</h5>
-                      <p>Target high-growth stocks, emerging sectors, and cryptocurrencies. Best for those with experience in the market and a high tolerance for risk.</p>
-                  </div>
-              </div>
+        <h2 class="text-center mb-5">
+          Practical Investment Strategies for Every Investor
+        </h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="strategy-card low-risk">
+              <h5>Low-Risk Strategy (Beginner Investors)</h5>
+              <p>
+                Focus on mutual funds, government bonds, and blue-chip stocks to
+                ensure steady and stable growth. Ideal for learning the basics
+                of investing while managing risk effectively.
+              </p>
+            </div>
           </div>
-          <div class="row mt-5">
-              <div class="col-md-6">
-                  <div class="strategy-card medium-risk">
-                      <h5>Growth Strategy Inspired by Peter Lynch</h5>
-                      <p>Explore a mix of undervalued and growth stocks, focusing on long-term opportunities and sustainable growth.</p>
-                  </div>
-              </div>
-              <div class="col-md-6">
-                  <div class="strategy-card high-risk">
-                      <h5>Hedge Fund Approach (Advanced Investors)</h5>
-                      <p>Inspired by diversified portfolios, this strategy balances different asset classes to manage risk while targeting returns.</p>
-                  </div>
-              </div>
+          <div class="col-md-4">
+            <div class="strategy-card medium-risk">
+              <h5>Medium-Risk Strategy (Intermediate Investors)</h5>
+              <p>
+                Blend of index funds, large-cap stocks, and some growth stocks.
+                A balanced approach for building wealth over time with measured
+                risks.
+              </p>
+            </div>
           </div>
-          <div class="row mt-5">
-              <div class="col-md-6">
-                  <div class="strategy-card medium-risk">
-                      <h5>Value Investing Approach (Warren Buffett)</h5>
-                      <p>Focus on strong fundamentals and long-term growth by investing in undervalued companies with solid business models.</p>
-                  </div>
-              </div>
-              <div class="col-md-6">
-                  <div class="strategy-card high-risk">
-                      <h5>Contrarian Strategy (Rakesh Jhunjhunwala)</h5>
-                      <p>Invest in overlooked sectors with potential growth. This strategy requires patience and a deep understanding of market trends.</p>
-                  </div>
-              </div>
+          <div class="col-md-4">
+            <div class="strategy-card high-risk">
+              <h5>High-Risk Strategy (Advanced Investors)</h5>
+              <p>
+                Target high-growth stocks, emerging sectors, and
+                cryptocurrencies. Best for those with experience in the market
+                and a high tolerance for risk.
+              </p>
+            </div>
           </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="strategy-card medium-risk">
+              <h5>Growth Strategy Inspired by Peter Lynch</h5>
+              <p>
+                Explore a mix of undervalued and growth stocks, focusing on
+                long-term opportunities and sustainable growth.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="strategy-card high-risk">
+              <h5>Hedge Fund Approach (Advanced Investors)</h5>
+              <p>
+                Inspired by diversified portfolios, this strategy balances
+                different asset classes to manage risk while targeting returns.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="strategy-card medium-risk">
+              <h5>Value Investing Approach (Warren Buffett)</h5>
+              <p>
+                Focus on strong fundamentals and long-term growth by investing
+                in undervalued companies with solid business models.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="strategy-card high-risk">
+              <h5>Contrarian Strategy (Rakesh Jhunjhunwala)</h5>
+              <p>
+                Invest in overlooked sectors with potential growth. This
+                strategy requires patience and a deep understanding of market
+                trends.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-  </section>
+    </section>
 
-  <!-- Success Stories Section -->
-  <section class="bg-light py-5">
+    <!-- Success Stories Section -->
+    <section class="bg-light py-5">
       <div class="container">
-          <h2 class="text-center mb-5">Learning from Real-Life Investment Journeys</h2>
-          <div class="success-story">
-              <h5>Anita's Steady Financial Growth</h5>
-              <p>Anita started with low-risk investments and gradually diversified her portfolio. Over time, her consistent efforts have provided her with financial security and growth.</p>
-          </div>
-          <div class="success-story">
-              <h5>Rajesh's Strategic Investment Journey</h5>
-              <p>By focusing on technology and adapting his strategy, Rajesh achieved significant growth over time, illustrating the importance of research and planning.</p>
-          </div>
+        <h2 class="text-center mb-5">
+          Learning from Real-Life Investment Journeys
+        </h2>
+        <div class="success-story">
+          <h5>Anita's Steady Financial Growth</h5>
+          <p>
+            Anita started with low-risk investments and gradually diversified
+            her portfolio. Over time, her consistent efforts have provided her
+            with financial security and growth.
+          </p>
+        </div>
+        <div class="success-story">
+          <h5>Rajesh's Strategic Investment Journey</h5>
+          <p>
+            By focusing on technology and adapting his strategy, Rajesh achieved
+            significant growth over time, illustrating the importance of
+            research and planning.
+          </p>
+        </div>
       </div>
-  </section>
+    </section>
 
-  <!-- Call to Action Section -->
-  <section class="bg-success text-white py-5">
+    <!-- Call to Action Section -->
+    <section class="bg-success text-white py-5">
       <div class="container text-center">
-          <h2>Join Our WhatsApp Community for Investment Insights</h2>
-          <p>Learn from others, stay updated on market trends, and enhance your financial planning skills. Click below to join now!</p>
-          <a href="https://chat.whatsapp.com/IknHJU7o3lp6810HghOw5u" target="_blank" class="btn btn-light btn-lg join-whatsapp-button">
-              <i class="fab fa-whatsapp"></i> Join WhatsApp Group
-          </a>
+        <h2>Join Our WhatsApp Community for Investment Insights</h2>
+        <p>
+          Learn from others, stay updated on market trends, and enhance your
+          financial planning skills. Click below to join now!
+        </p>
+        <a
+          href="https://chat.whatsapp.com/IknHJU7o3lp6810HghOw5u"
+          target="_blank"
+          class="btn btn-light btn-lg join-whatsapp-button"
+        >
+          <i class="fab fa-whatsapp"></i> Join WhatsApp Group
+        </a>
       </div>
-  </section>
+    </section>
 
-  <!-- Footer Section -->
-  <footer>
+    <!-- Footer Section -->
+    <footer>
       <div class="container">
-          <p>&copy; 2024 SmartInvest India. All Rights Reserved. | <a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Use</a></p>
-          <p>Follow us on <a href="#" class="text-white">LinkedIn</a>, <a href="#" class="text-white">Twitter</a>, and <a href="#" class="text-white">Facebook</a></p>
+        <p>
+          &copy; 2024 SmartInvest India. All Rights Reserved. |
+          <a href="#" class="text-white">Privacy Policy</a> |
+          <a href="#" class="text-white">Terms of Use</a>
+        </p>
+        <p>
+          Follow us on <a href="#" class="text-white">LinkedIn</a>,
+          <a href="#" class="text-white">Twitter</a>, and
+          <a href="#" class="text-white">Facebook</a>
+        </p>
       </div>
-  </footer>
-</body>
-
-
+    </footer>
+  </body>
 </html>
